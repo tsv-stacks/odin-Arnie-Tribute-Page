@@ -1,10 +1,12 @@
 :root {
 --bg-color: #1B1A18;
 --white-text: gainsboro;
+--bg-grey: #D0CCD0;
 }
 
 * {
-border: 1px solid red;
+border: 1px solid transparent;
+font-family: 'Noto Sans', sans-serif;
 }
 
 html, body {
@@ -80,4 +82,106 @@ h1 {
 .intro-flex {
     display: flex;
     justify-content: space-around;
+}
+
+/* Highlights */
+
+.highlights {
+    background-color: #D0CCD0;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+
+.highlights-container {
+    display: flex;
+    flex-direction: row;
+    /* max-width: 100vw; */
+    justify-content: space-evenly;
+}
+
+.highlight-section {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlights img {
+   width: 200px;
+   height: 250px;
+   /* width: 100%; */
+   object-fit: cover;
+}
+
+.highlights p {
+    /* display: flex; */
+    margin-top: 0;
+    max-width: 200px;
+}
+
+/* Quote */
+
+.quote {
+background-image: url("https://miro.medium.com/max/1071/1*WNr4o3XKVcb556Al3beWAQ.jpeg");
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+height: 612px;
+background-position: center;
+}
+
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    color: gold;
+    /* margin: 40% 15% 15% 10% ; */
+/*
+    margin: 15% auto; */
+    /* margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15%; */
+    margin: 25% 15%;
+    /* font-family: 'MonteCarlo', cursive; */
+}
+
+.quote-source {
+    display: flex;
+    justify-content: flex-end;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* subscribe */
+.subscribe-section {
+    background-color: var(--bg-grey);
+}
+.subscribe-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    transition-duration: 0.4s;
+    padding: 10px 15px;
+    background-color: #008CBA;
+    color: white;
+    border-radius: 4px;
+  }
+
+button:hover {
+    background-color: var(--bg-color); /* Green */
+    color: white;
+  }
+
+/* footer */
+
+footer {
+    background-color: var(--bg-color);
+    color: var(--white-text);
+    text-align: center;
+    font-size: 16px;
 }
