@@ -11,6 +11,9 @@ html, body {
     margin: 0;
     padding: 0;
 }
+.flex {
+    display: flex;
+}
 
 /* Header */
 header {
@@ -36,6 +39,7 @@ header {
     display: flex;
     padding: 12px;
     color: var(--white-text);
+    font-size: 18px;
 }
 /* Intro */
 .intro {
@@ -47,8 +51,33 @@ header {
 h1 {
     display: flex;
     justify-content: center;
+    font-size: 48px;
 }
 
 .intro-img {
     width: 60vw;
+}
+.intro ul {
+    padding-left: 0%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro li {
+ list-style-type: none;
+ text-align: center;
+ justify-content: center;
+ /* margin: 0 auto; */
+ font-size: 30px;
+ font-weight: bold;
+ flex-grow: 1;
+    font-style: italic;
+}
+
+.intro-flex {
+    display: flex;
+    justify-content: space-around;
 }
