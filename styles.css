@@ -13,6 +13,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
 .flex {
     display: flex;
 }
@@ -54,6 +55,7 @@ h1 {
     display: flex;
     justify-content: center;
     font-size: 48px;
+    text-transform: uppercase;
 }
 
 .intro-img {
